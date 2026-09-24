@@ -529,16 +529,16 @@ p {
 }
 
 .software-gallery {
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: center;
   padding: 14px;
   background: #f7f5f3;
 }
 
 .software-gallery img {
-  height: 92px;
-  padding: 11px;
-  object-fit: contain;
+  height: 150px;
+  padding: 0;
+  object-fit: cover;
 }
 
 .service-points {
@@ -1856,6 +1856,10 @@ textarea {
   .desktop-showcase {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  .software-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .system-card {
